@@ -5,6 +5,7 @@ def multiply(x, y):
     return result
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 메인 함수
 def main():  
     
@@ -24,6 +25,8 @@ def main():
         print("결과: ", multiply(num1, num2))
     
 =======
+=======
+>>>>>>> 592c85c31f7c4f5b6a1b975e061be3eacb624370
 # 메인 함수.
 def main():
 
@@ -45,7 +48,10 @@ def main():
         elif operator == '*':
             num1 = multiply(num1, num2)
 
+<<<<<<< HEAD
 >>>>>>> 7c20283d19341caacd1f1b21078d45869864bbc6
+=======
+>>>>>>> 592c85c31f7c4f5b6a1b975e061be3eacb624370
 
 if __name__ == "__main__":
     main()
