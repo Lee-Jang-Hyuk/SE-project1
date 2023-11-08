@@ -1,3 +1,5 @@
+git commit -m "SE1-2 <message>"
+
 #빼기 함수
 def subtract(x, y):
     if (isinstance(x, int) and isinstance(y, int)):
