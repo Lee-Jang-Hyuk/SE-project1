@@ -1,0 +1,5 @@
+# 입력된 숫자가 7인지 확인
+    if num1 == 7:
+        print("LUCKY!")
+    if num2 == 7:
+        print("LUCKY!")
