@@ -27,7 +27,7 @@ def main():
             print(num1)
             break
 
-        num2 = get_integer_input()
+        num2 = get_integer_input() //변경된 부분
 
         if operator == '+':
             num1 = add(num1, num2)
