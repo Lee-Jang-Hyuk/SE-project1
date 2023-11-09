@@ -1,4 +1,29 @@
 
+# 더하기 함수
+def add(x, y):
+    if not (isinstance(x, int)) or not (isinstance(y, int)):
+        raise ValueError("Error: Please use Integer")
+    result = x + y
+    return result
+
+# 빼기 함수
+
+
+def subtract(x, y):
+    if (isinstance(x, int) and isinstance(y, int)):
+        return x - y
+    else:
+        print("ERROR!")
+
+# 곱셈 함수
+
+
+def multiply(x, y):
+    if not (isinstance(x, int)) or not (isinstance(y, int)):
+        raise ValueError("Error: Please use Integer")
+    result = x * y
+    return result
+    
 # 메인 함수
 def main():
 
