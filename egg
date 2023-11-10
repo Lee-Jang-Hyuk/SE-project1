@@ -1,5 +1,0 @@
-# 이스터에그 입력된 숫자가 7이라면 메시지 출력. 
-    if num1 == 7:
-        print("LUCKY!")
-    if num2 == 7:
-        print("LUCKY!")
