@@ -1,4 +1,4 @@
-# 더하기 함수
+# 더하기 함수 
 def add(x, y):
     if not (isinstance(x, int)) or not (isinstance(y, int)):
         raise ValueError("Error: Please use Integer")
