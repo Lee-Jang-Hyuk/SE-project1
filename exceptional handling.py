@@ -5,7 +5,7 @@ def add(x, y):
     result = x + y
     return result
 
-# 빼기 함수
+# 빼기 함수 
 def subtract(x, y):
       if (isinstance(x, int) and isinstance(y, int)):
           return x - y
