@@ -14,6 +14,7 @@ def easterEgg(number):
         print("lucky!")
     elif number==82100:
         print("빨리 돌아와")
+    
 
 # 메인 함수
 def main():
