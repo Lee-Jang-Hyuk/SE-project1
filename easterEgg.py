@@ -1,26 +1,36 @@
 
-#ÀÌ½ºÅÍ¿¡±× 
+#ì´ìŠ¤í„°ì—ê·¸ 
 
 def easterEgg(number):
-    if number == 7:
-        print("LUCKY!")
+    if number == 404:
+        print("not found")
+    elif number==1004:
+        print("thanks for your kindness!")
+    elif number==7942:
+        print("Amigo!")
+    elif number==505:
+        print("SOS")
+    elif number==777:
+        print("lucky!")
+    elif number==82100:
+        print("ë¹¨ë¦¬ ëŒì•„ì™€")
 
-# ¸ŞÀÎ ÇÔ¼ö
+# ë©”ì¸ í•¨ìˆ˜
 def main():
-    print("°£´ÜÇÑ °è»ê±â ÀÔ´Ï´Ù. ´õÇÏ±â, »©±â, °öÇÏ±â¸¸ °¡´ÉÇÕ´Ï´Ù.")
+    print("ê°„ë‹¨í•œ ê³„ì‚°ê¸° ì…ë‹ˆë‹¤. ë”í•˜ê¸°, ë¹¼ê¸°, ê³±í•˜ê¸°ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.")
 
     num1 = get_integer_input()
-    # ÀÌ½ºÅÍ¿¡±×
+    # ì´ìŠ¤í„°ì—ê·¸
     easterEgg(num1)
 
     while True:
-        operator = input("¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(+, -, *, =): ")
+        operator = input("ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì„¸ìš”(+, -, *, =): ")
         if operator == '=':
             print(num1)
             break
 
-        num2 = get_integer_input()  # º¯°æµÈ ºÎºĞ
-        # ÀÌ½ºÅÍ¿¡±×
+        num2 = get_integer_input()  # ë³€ê²½ëœ ë¶€ë¶„
+        # ì´ìŠ¤í„°ì—ê·¸
         easterEgg(num2)
 
         if operator == '+':
@@ -30,7 +40,7 @@ def main():
         elif operator == '*':
             num1 = multiply(num1, num2)
         else:
-            print("Àß¸øµÈ ¿¬»êÀÚÀÔ´Ï´Ù. ´õÇÏ±â(+), »©±â(-), °öÇÏ±â(*)¸¸ °¡´ÉÇÕ´Ï´Ù.")
+            print("ì˜ëª»ëœ ì—°ì‚°ìì…ë‹ˆë‹¤. ë”í•˜ê¸°(+), ë¹¼ê¸°(-), ê³±í•˜ê¸°(*)ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.")
 
 if __name__ == "__main__":
     main()
