@@ -23,6 +23,11 @@ def multiply(x, y):
 def check_operator(operator):
     if operator not in ('+', '-', '*'):
         raise ValueError("Error: Invalid operator. Please use '+', '-', '*'")
+def check_integer(value):
+    try:
+        int(value)
+    except ValueError:
+        raise ValueError("Error: Please enter an Integer")
 
 # 메인 함수
 def main():
@@ -41,6 +46,7 @@ def main():
         check_operator(operator)  # 예외 처리
 
         num2 = int(input())
+        check_integer(num2)      # 예외 처리
 
         if operator == '+':
             num1 = add(num1, num2)
