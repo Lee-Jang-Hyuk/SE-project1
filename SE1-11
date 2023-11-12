@@ -1,0 +1,56 @@
+# 더하기 함수
+def add(x, y):
+    return x + y
+
+# 빼기 함수
+
+
+def subtract(x, y):
+    return x - y
+
+# 곱하기 함수
+
+
+def multiply(x, y):
+    return x * y
+
+
+# 메인 함수
+def main():
+    flag = True
+    print("간단한 계산기 입니다. 더하기, 빼기, 곱하기만 가능합니다.")
+
+    try:
+        num1 = int(input())
+    except:
+        flag = False
+        num1 = 1
+
+    while True:
+        operator = input()
+
+        if operator == '=':
+            if flag == False:
+                print("ERROR!")
+                break
+            print(num1)
+            break
+
+        try:
+            num2 = int(input())
+        except:
+            flag = False
+            num2 = 1
+
+        if operator == '+':
+            num1 = add(num1, num2)
+        elif operator == '-':
+            num1 = subtract(num1, num2)
+        elif operator == '*':
+            num1 = multiply(num1, num2)
+        else:
+            flag = False
+
+
+if __name__ == "__main__":
+    main()
