@@ -50,16 +50,17 @@ def main():
       num2 = input()
 
       if operator == '=':
-        error_message_operator = check_operator(operator)
         error_message_num1 = check_integer(num1)
-        error_message_num2 = check_integer(num2)  # 연산자 예외 처리
+        error_message_num2 = check_integer(num2) # 연산자 예외 처리
+        error_message_operator = check_operator(operator)
+        
         if error_message_num1:
           raise ValueError(error_message_num1)
         elif error_message_num2:
           raise ValueError(error_message_num2)
         elif error_message_operator:
           raise ValueError(error_message_operator)
-          
+        
         print(num1)
         break
 
